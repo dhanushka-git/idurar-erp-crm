@@ -45,7 +45,7 @@ module.exports = downloadPdf = async (req, res, { directory, id }) => {
     }
   } catch (error) {
     // If error is thrown by Mongoose due to required validations
-    if (error.name == 'ValidationError') {
+    if (error.name === 'ValidationError') {
       return res.status(400).json({
         success: false,
         result: null,

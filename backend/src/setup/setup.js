@@ -5,7 +5,16 @@ const fs = require('fs');
 const { generate: uniqueId } = require('shortid');
 
 const mongoose = require('mongoose');
-mongoose.connect(process.env.DATABASE);
+// const {algeria} = require("@/locale/translation/en_us");
+
+const databaseUri = process.env.DATABASE;
+
+if (!databaseUri) {
+  console.error('🚫 Error! The DATABASE environment variable is not set.');
+  process.exit(1);
+}
+
+mongoose.connect(databaseUri)
 
 async function setupApp() {
   try {
