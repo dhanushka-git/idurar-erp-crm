@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { Avatar, Dropdown, Layout, Badge, Button } from 'antd';
 
-// import Notifications from '@/components/Notification';
+import Notifications from '@/components/Notification';
 
 import { LogoutOutlined, ToolOutlined, UserOutlined } from '@ant-design/icons';
 
@@ -95,6 +95,7 @@ export default function HeaderContent() {
         gap: ' 15px',
       }}
     >
+
       <Dropdown
         menu={{
           items,
@@ -118,12 +119,13 @@ export default function HeaderContent() {
         >
           {currentAdmin?.name?.charAt(0)?.toUpperCase()}
         </Avatar>
-        {/* </Badge> */}
+         {/*</Badge> */}
       </Dropdown>
 
       {/* <AppsButton /> */}
 
-      <UpgradeButton />
+      {/*<UpgradeButton />*/}
+
     </Header>
   );
 }
