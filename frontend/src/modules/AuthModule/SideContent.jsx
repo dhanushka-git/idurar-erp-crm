@@ -15,7 +15,7 @@ export default function SideContent() {
         padding: '150px 30px 30px',
         width: '100%',
         maxWidth: '450px',
-        margin: '0 auto',
+        margin: 'auto',
       }}
       className="sideContent"
     >
@@ -24,18 +24,18 @@ export default function SideContent() {
           src={logo}
           alt="IDURAR ERP CRM"
           style={{ margin: '0 0 40px', display: 'block' }}
-          height={63}
-          width={220}
+          height={300}
+          width={300}
         />
 
         <Title level={1} style={{ fontSize: 28 }}>
-          Free Open Source ERP / CRM
+          Ideation CRM
         </Title>
-        <Text>
-          Accounting / Invoicing / Quote App <b /> based on Node.js React.js Ant Design
-        </Text>
+        {/*<Text>*/}
+        {/*  Accounting / Invoicing / Quote App <b /> based on Node.js React.js Ant Design*/}
+        {/*</Text>*/}
 
-        <div className="space20"></div>
+        {/*<div className="space20"></div>*/}
       </div>
     </Content>
   );

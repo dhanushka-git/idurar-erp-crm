@@ -29,6 +29,9 @@ export default ({ mode }) => {
         },
       },
     },
+    build: {
+      outDir: 'build'
+    }
   };
   return defineConfig(config);
 };
